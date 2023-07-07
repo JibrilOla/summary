@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* BODY BACKGROUND/DISPLAY */
+  body {
+    height: 900px;
+    background: url("images/pattern-background-desktop.svg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: hsl(223, 47%, 23%);
+  }
+
+  /* ORDER CARD */
+  .content {
+    height: 600px;
+    background: white;
+    width: 400px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 13px 17px rgb(163, 161, 161);
+  }
+
+  /* IMG ILLUSTRATION/HERO */
+  .img {
+    background: url("images/illustration-hero.svg") no-repeat center center/cover;
+    height: 36%;
+    width: 100%;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+  }
+
+  /* HEADER/ "ORDER SUMMARY" */
+  .txt1 {
+    margin: 40px;
+    position: relative;
+    bottom: 3%;
+
+  }
+
+  /* 1ST PARAGRAPH AFTER HEADER */
+  p {
+    font-size: 90%;
+    color: rgb(142, 148, 148);
+
+  }
+
+  /* 2ND SECTION/ PLAN /PRICE SECTION */
+  .price {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 4%;
+  }
+
+  /* MUSIC ICON + PLAN + PRICE== CHANGE  */
+  #music {
+    display: flex;
+
+  }
+
+  /* "ANNUAL PLAN" */
+  #yr {
+    position: relative;
+    left: 10%;
+  }
+
+  /* PRICE/DURATION */
+  #pp {
+    color: rgb(110, 107, 107);
+    position: relative;
+    top: 10px;
+  }
+
+  /* PROCEED BUTTON */
+  .payment {
+    background: hsl(245, 75%, 52%);
+    height: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgb(172, 169, 169);
+  }
+
+  /* CANCCEL */
+  #cancel {
+    position: relative;
+    top: 4%;
+  }
+
+  
+</style>
+
+<body>
+  <!-- ORDER CARD -->
+  <div class="content">
+    <!-- IMG TAG -->
+    <div class="img"></div>
+    <!-- TEXT BELOW IMG -->
+    <div class="txt1">
+      <h2>Order Summary</h2>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <p></p>
+    </div>
+
+    <!-- PRICE/PLAN SECTION-->
+    <section class="price">
+      <div id="music">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+              <path fill="#717FA6" fill-rule="nonzero"
+                d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z" />
+            </g>
+          </svg>
+        </div>
+        <div id="yr"><b>Annual Plan</b>
+          <div id="pp"> $59.99/year</div>
+        </div>
+      </div>
+      <div id="change"><a href=""><b>change</b></a></div>
+    </section>
+
+
+    <!-- PAYMENT BUTTON -->
+    <div class="payment">
+      <div>Proceed to Payment</div>
+    </div>
+    <!-- CANCEL BUTTON -->
+    <div id="cancel">
+      <div>Cancel Order</div>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
